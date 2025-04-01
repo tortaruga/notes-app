@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: rgb(70, 119, 223);
+  letter-spacing: 0.05rem;
+  background-color: whitesmoke;
+  margin: 0;
+}
+
+button,
+input {
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: inherit;
+  border: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+strong {
+  color: #2257c6;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(209, 102, 142);
+}
+a:hover {
+  color: rgb(255, 217, 0);
+}
+
+.blabberings h2 {
+  color: rgb(209, 102, 142);
+  font-size: 2rem;
+}
+
+.blabberings h2 span:first-of-type {
+  color: rgb(70, 119, 223);
+}
+
+.blabberings h2 span {
+  color: rgb(255, 217, 0);
+}
+
+.blabberings {
+  text-align: center;
+  margin-block-start: 5rem;
+  margin-inline: auto;
+  background-color: white;
+  padding: 1rem;
+  width: 100%;
+}
+
+.blabberings p {
+  max-width: 37.5rem;
+  margin: 1.5rem auto;
+}
+
+.credits {
+  font-size: 0.8rem;
+}
+
+.notes-app {
+  padding: 1rem;
+  max-width: 68.75rem;
+}
+
+.create-note-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+#note-title-input,
+.edit-title {
+  width: 50%;
+  min-width: 300px;
+  padding: 0.5rem;
+  color: rgb(209, 102, 142);
+  font-weight: 600;
+  letter-spacing: inherit;
+  border: 0.1rem solid rgb(70, 119, 223);
+  box-shadow: 0.3rem 0.3rem;
+}
+#note-title-input:focus-visible,
+.edit-title:focus-visible {
+  outline-color: rgb(209, 102, 142);
+}
+
+#notes-text-input,
+.edit-text {
+  padding: 0.5rem;
+  width: 50%;
+  min-width: 300px;
+  height: 10rem;
+  color: rgb(70, 119, 223);
+  box-shadow: 0.3rem 0.3rem;
+  border: 0.1rem solid rgb(209, 102, 142);
+}
+#notes-text-input:focus-visible,
+.edit-text:focus-visible {
+  outline-color: rgb(70, 119, 223);
+  letter-spacing: inherit;
+}
+
+.create-note-form button {
+  background-color: rgb(255, 217, 0);
+  color: rgb(70, 119, 223);
+  border: 0.1rem solid;
+  padding: 0.5rem 1rem;
+  box-shadow: 0.3rem 0.3rem rgb(255, 217, 0);
+  transition: 0.4s;
+}
+.create-note-form button:hover {
+  box-shadow: 0 0 rgb(255, 217, 0);
+}
+
+.notes {
+  margin-block: 5rem auto;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-height: 90vh;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.note {
+  border: 0.1rem solid;
+  padding: 1rem;
+  flex-basis: 300px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0.3rem 0.3rem rgb(255, 217, 0);
+  background-color: white;
+}
+
+.note-title {
+  margin-block: auto 2rem;
+  color: rgb(209, 102, 142);
+}
+
+.note-text {
+  white-space: pre-wrap;
+  margin-block: 0 5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  background: url(/assets/delete.svg) no-repeat;
+  background-position: center;
+  background-size: 1.25rem;
+  width: 2rem;
+  aspect-ratio: 1;
+}
+.delete-btn:hover {
+  background-size: 1.5rem;
+}
+
+.edit-btn {
+  background: url(/assets/edit.svg) no-repeat;
+  background-position: center;
+  background-size: 1.25rem;
+  width: 2rem;
+  aspect-ratio: 1;
+}
+.edit-btn:hover {
+  background-size: 1.5rem;
+}
+
+.save-btn {
+  background-color: rgb(255, 217, 0);
+  padding: 0.3rem 0.5rem;
+  color: rgb(70, 119, 223);
+}
+.save-btn:hover {
+  background-color: #f0cc00;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-block: auto 5rem;
+}
+
+.edit-title,
+.edit-text {
+  width: 100%;
+}
+
+@media screen and (min-width: 118.75rem) {
+  main {
+    grid-template-columns: 50% 48%;
+    gap: 2%;
+  }
+  .blabberings {
+    background-color: transparent;
+    margin-top: 15rem;
+  }
+}/*# sourceMappingURL=index.css.map */
