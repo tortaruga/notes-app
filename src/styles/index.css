@@ -160,23 +160,23 @@ a:hover {
 }
 
 .delete-btn {
-  background: url(/assets/delete.svg) no-repeat;
-  background-position: center;
-  background-size: 1.25rem;
-  width: 2rem;
-  aspect-ratio: 1;
-}
-.delete-btn:hover {
-  background-size: 1.5rem;
+  background-image: url(/assets/delete.svg);
 }
 
 .edit-btn {
-  background: url(/assets/edit.svg) no-repeat;
+  background-image: url(/assets/edit.svg);
+}
+
+.delete-btn,
+.edit-btn {
+  background-repeat: no-repeat;
+  background-color: transparent;
   background-position: center;
   background-size: 1.25rem;
   width: 2rem;
   aspect-ratio: 1;
 }
+.delete-btn:hover,
 .edit-btn:hover {
   background-size: 1.5rem;
 }
